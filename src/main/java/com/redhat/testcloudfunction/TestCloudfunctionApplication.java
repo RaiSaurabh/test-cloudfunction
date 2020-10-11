@@ -27,6 +27,7 @@ public class TestCloudfunctionApplication {
 
 	@Bean
 	public Supplier<String> hello() {
+		System.out.println("Hello was requested......");
 		return () -> "Hello There......";
 	}
 }
